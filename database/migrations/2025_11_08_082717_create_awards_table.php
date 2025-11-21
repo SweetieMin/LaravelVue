@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('awards', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('year_id')->constrained()->onDelete('cascade');
+            $table->foreignId('event_id')->constrained()->onDelete('cascade');
 
             $table->string('name'); //giải đặc biệt
             $table->string('title'); //Xe máy....
